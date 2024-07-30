@@ -11,7 +11,8 @@ mongoose
             console.log('MongoDB Connected')
         })
         
-    }).catch((e)=>{
+    })
+    .catch((e)=>{
         console.log(e)
     })
 
