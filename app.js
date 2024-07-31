@@ -2,7 +2,9 @@ const express = require('express')
 //other packages
 const logger = require('morgan')
 const cors = require('cors')
-const userRouter = require('./routes/user/userRouter')
+const favoriteRouter = require('./routes/favorite/favoriteRouter.js')
+const InHouseRouter = require('./routes/inHouse/inHouseRouter.js')
+
 
 
 //start express app
@@ -12,7 +14,8 @@ const app = express()
 app.use(logger('dev'))
 app.use(cors())
 app.use(express.json())
-app.use('/api/user', userRouter)
+app.use('/api/favorite', favoriteRouter)
+app.use('/api/inHouse', InHouseRouter)
 
 // app.get('/api/recipes/search', async (req, res)=>{
 //     res.json({message: "Success!"})

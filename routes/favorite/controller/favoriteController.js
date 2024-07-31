@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs')
-const User = require('../model/Favorite')
+const Favorite = require('../model/Favorite')
 
 const searchRecipes = async (searchTerm, page)=> {
     if(!apiKey) {
