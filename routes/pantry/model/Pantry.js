@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const inHouseSchema = new mongoose.Schema({
+const pantrySchema = new mongoose.Schema({
     ingredient:{
         type: String
     },
@@ -9,4 +9,4 @@ const inHouseSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('inHouse', inHouseSchema)
+module.exports = mongoose.model('pantry', pantrySchema)

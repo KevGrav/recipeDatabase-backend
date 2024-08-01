@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const favoriteSchema = new mongoose.Schema({
+const recipiesSchema = new mongoose.Schema({
     id:{
         type: Number
     },
@@ -12,4 +12,4 @@ const favoriteSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('favorite', favoriteSchema)
+module.exports = mongoose.model('recipies', recipiesSchema)

@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs')
-const Favorite = require('../model/Favorite')
+const Recipes = require('../model/Recipes')
 
 const searchRecipes = async (searchTerm, page)=> {
     if(!apiKey) {
@@ -23,3 +23,4 @@ const searchRecipes = async (searchTerm, page)=> {
         console.log(error)    
     }
 }
+module.exports = {}
