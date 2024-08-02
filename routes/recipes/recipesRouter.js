@@ -1,7 +1,10 @@
 const express = require('express')
 const router = express.Router()
-//import * as RecipeAPI from "./recipe-api"
+const getRecipes = require('./controller/recipesController')
 
-//router.get('/search-recipes', searchRecipes)
+
+router.get('/get-recipes', getRecipes)
+
+
 
 module.exports = router
